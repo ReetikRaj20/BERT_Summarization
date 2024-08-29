@@ -1,0 +1,158 @@
+CONCLUSION AND DISCUSSION
+SUMMARY OF FINDINGS
+In this study, we compared how well different physiological variables can be used to assess workload in (simulated) real time for a
+single individual, when the amount of body movement and visual
+information are controlled for. We also examined to what extent
+(different ways of) combining information leads to better classification performance, as well as whether taking time into account
+improves performance.
+Classification models based on data from each of the three sensor groups perform above chance (distinguishing high from low
+workload) at a 0.01 significance level, where EEG reached around
+86% classification accuracy and classification models based on
+peripheral physiology and eye-related variables reached between
+70 and 75% accuracy. As hypothesized, the difference in classification accuracy between models based on EEG variables on
+the one hand, and models based on peripheral physiology and
+eye-related variables on the other hand was statistically significant. The best performing single variable was ERP at Pz with
+88% accuracy (elastic net). All EEG variables (except power in
+the theta band measured at Fz) performed well above chance (p <
+0.01). The only non-EEG variables exceeding the 0.01 chance level
+were respiration frequency (69% accuracy) and pupil size (75%
+accuracy).
+As hypothesized, combining variables recorded using a single
+sensor (i.e., only the EEG electrodes, electrode Pz, skin conductance electrodes, respiration belt, ECG electrodes or eye camera) does not significantly improve performance over the best
+Frontiers in Neuroscience | Neuroprosthetics October 2014 | Volume 8 | Article 322 | 10
+Hogervorst et al. Workload from EEG, physiology, and eye signals
+FIGURE 4 | Classification performance in the default condition (2- vs.
+0-back, 120 s) for the different sensor types and using all available
+input. The striped bars show the effect of adding the time feature.
+Conventions as in Figure 1.
+performing single variable from that sensor. Variables from the
+same sensor are likely highly correlated and, in our experiment,
+combining them has no added value. For four out of the six
+sensors the trend was even that performance worsened when
+combining data.
+Combining variables of the three physiological sensors (skin
+conductance electrodes, respiration belt and ECG electrodes)
+resulted in a modest, non-significant improvement to around
+75% classification accuracy with respect to the best performing single physiological sensor (respiration—around 70%). In
+contrast to what we expected, combining EEG with another sensor group (physiology and eyes) does not lead to a significant
+improvement in classification accuracy over EEG alone. Using
+elastic net, we only found non-significant trends of better performance for EEG combined with eye data (91% accuracy) and EEG
+combined with physiology (89%) than EEG alone (86% accuracy). Adding physiology to fused EEG and eye data does not
+further improve, or tend to improve, performance. Analysis of
+data from shorter time segments or smaller workload differences
+indicates that the fact that we did not get a stronger, significant
+improvement of adding physiological or eye data to EEG is not
+caused by a ceiling effect.
+Fusion of variables by concatenating feature vectors could not
+be improved by fusing variables at the decision level. The latter
+approach results in a more balanced weighting of the different
+indicators compensating for the low number of features from
+physiological and eye-based variables relative to EEG, and could
+therefore have improved classification. As it turned out, the variables that may have profited of the decision level approach, i.e.,
+physiological and eye data, performed lower than EEG variables.
+Giving more weight to variables with a lower performance is
+not necessarily beneficial. In addition, classification models based
+on concatenation may be making more optimal use of interactions between variables that are missed when fusion occurs at the
+decision level.
+Including the time of measurement relative to the start of
+the experiment as a parameter leads to statistically significant
+improvements of up to 9% for physiological variables. Adding
+time did not significantly improve performance of classifiers
+based on EEG, eye-related variables or combinations of variables.
+The latter cannot be attributed to a ceiling effect, as indicated by
+analysis of data from shorter time segments or smaller workload
+differences.
+COMBINATION OF INFORMATION
+The notion that combining physiological variables that reflect a
+certain mental state will result in a more accurate assessment of
+this mental state compared to using these variables on their own
+seems very sensible and has frequently been suggested in the literature as a potential way to improve mental state assessment.
+However, we are not aware of studies that tried this and showed
+a statistically reliable and strong improvement. A few studies
+explicitly mention that combination of physiological information did not result in reliable improvement (e.g., Christensen
+et al., 2012; Coffey et al., 2012; Severens et al., 2013) or only to
+a modest degree in one of multiple conditions (Brouwer et al.,
+2012). Other studies report that classification performance of
+models combining information increases classification accuracy
+(by a small amount) but do not provide statistical evidence to
+show that the effect is reliable (e.g., Chanel et al., 2009). We had
+anticipated that our study could provide clear evidence for the
+benefit of combination given the nature of workload, which is
+a mental state that involves multiple processes that are presumably reflected by different types of physiological variables (e.g.,
+cognitive processes by EEG and arousal by peripheral physiological measures). Also, while most studies combine information by
+fusion at the feature level, we thought that fusion of information
+at the decision level could have contributed to finding a strong
+reliable advantage of combining information. However, we did
+not find significant differences between the two methods, with
+the overall trend indicating worse rather than better performance
+for fusion at the decision. The fact that with this study, there is
+still no evidence of large benefits when combining physiological variables reflecting workload suggests that they are too highly
+related to gain a benefit of combination. It could be the case that
+meta-analyses or a study such as ours including more participants
+would turn non-significant trends of fusion benefits into statistically significant effects. However, if present at all, the effects of
+data fusion are at least small. Also, it may be the case that for
+other tasks (perhaps involving more strong emotional processing besides cognitive processes) benefits of feature fusion can be
+found more easily.
+WORKLOAD ASSESSMENT PERFORMANCE
+Classification accuracy for distinguishing 2-min segments of high
+vs. low workload for a single individual is relatively high (with an
+www.frontiersin.org October 2014 | Volume 8 | Article 322 | 11
+Hogervorst et al. Workload from EEG, physiology, and eye signals
+average over participants up to 91%), especially when considering
+the fact that the amount of movements and visual information was the same across workload levels, and that classification
+simulated a real time situation.
+When the duration of to be classified data segments was
+decreased to 30 s, this resulted in a relatively small decrease in
+performance, of on average 5% (elastic net) to 8% (SVM). The
+results further show that discrimination between more subtle differences in workload is possible as well. These results are good
+news for potential use in applications. Another finding that is useful for practical applications is that performance based on a single
+Pz-channel was found to be comparable to that of a model using
+all EEG-channels. This means that in our case a single channel
+suffices to characterize the EEG.
+As reported, we found EEG variables to be most informative
+when assessing workload. However, we also found pupil size and
+blink rate to reflect workload. This is interesting given the fact
+that lighting conditions and visual input were strictly controlled
+in our experiment. These results thus indicate that not only pupil
+size but also blink rate is affected by mental workload level apart
+from visual demands.
+GROUP vs. INDIVIDUAL LEVEL
+In the present study, we examine how well different variables
+can be used to assess workload in real time for a single individual by training classification models on different types of
+information and comparing performance. Sensitivity of physiological variables is often examined using group level analyses (e.g.,
+using repeated measures ANOVAs). However, for various reasons
+(see Introduction) one cannot draw straightforward conclusions
+about assessing workload on an individual level from the results
+on a group level. For instance, in the current study we found
+that classification models based on heart rate performed badly,
+while, for basically the same set of data, this variable was found
+to be among the ones most strongly associated with workload
+in a repeated measures ANOVA (Brouwer et al., 2014). Brouwer
+et al. (2014) also found that heart rate strongly decreased over
+the time course of the experiment. Since we presented workload
+conditions in 2-min segments equally dispersed over time, even
+strong time effects are averaged out in repeated measure ANOVAs
+whereas they could overrule the comparatively small workload
+effects in classification type of analyses, especially when classification models are trained on data acquired at the start of the experiment and tested on data at the end. Thus, caution should be taken
+when generalizing results from studies using group level analysis
+to situations where momentary data of individuals is used.
+NOISE AND CONFOUNDS IN REAL LIFE
+In real-life, out-of-the-lab situations, the presence of factors like
+body movement and varying light conditions may act as noise,
+therewith diminishing the value of certain variables (e.g., pupil
+size). Also, levels of workload can be confounded with different levels of stimulus processing or motor actions. For example,
+workload in Air Traffic Control may be confounded by speech,
+where controllers talking more during high than during low
+workload situations. Such confounds may affect physiology (e.g.,
+speech affects respiration), resulting in improved classification
+accuracy. One of the reasons for the fact that we only found a
+minor improvement in performance by fusing different workload
+measures may have been that the experiment controlled for many
+of such confounding factors, thus decreasing the additional benefit of recording various physiological measures. In this way we
+were better able to determine which factors directly reflect mental
+workload. However, in practical situations, physiological measures may supply information about the context and contribute
+to workload assessment in a more indirect way, i.e., via the
+confounds. In such a case one should determine whether physiological measures are the most convenient measures to supply
+workload information, or whether task or behavioral measures
+(such as the detection of speech through audio sensors with
+respect to our previous ATC example) are more suitable.
