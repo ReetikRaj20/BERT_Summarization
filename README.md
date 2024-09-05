@@ -25,4 +25,9 @@ __Image__
 ![Notepad 05-09-2024 15_12_58](https://github.com/user-attachments/assets/93832de4-4dbd-4e26-8df2-f69456eb62a6)
 
 # Sumarization of Text as an input 
-The discussion and conclusion [Debener et al. 2012 - How about taking a low-cost, small, and wireless EEG for a walk.pdf](https://github.com/user-attachments/files/16894101/Debener.et.al.2012.-.How.about.taking.a.low-cost.small.and.wireless.EEG.for.a.walk.pdf)
+The discussion and conclusion of this paper were fed manually by copying and pasting the text on the prompt. [Hogervorst et al. 2014 - Combining and comparing EEG , peripheral physiology and eye-related measures for the assessment of mental workload.pdf](https://github.com/user-attachments/files/16894171/Hogervorst.et.al.2014.-.Combining.and.comparing.EEG.peripheral.physiology.and.eye-related.measures.for.the.assessment.of.mental.workload.pdf)
+
+The text had 1721 words/204 sentences.
+
+ __Summarized text__
+![ManualText txt - Notepad 05-09-2024 15_34_45](https://github.com/user-attachments/assets/526b18c0-0ab2-4210-a687-f980d3f52459)
