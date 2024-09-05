@@ -31,3 +31,7 @@ The text had 1721 words/204 sentences.
 
  __Summarized text__
 ![ManualText txt - Notepad 05-09-2024 15_34_45](https://github.com/user-attachments/assets/526b18c0-0ab2-4210-a687-f980d3f52459)
+The summarized text has 320 words.
+
+## Flow Diagram 
+![Your paragraph text](https://github.com/user-attachments/assets/1f1aa65d-8844-46ca-9ba5-fe175333c71f)
