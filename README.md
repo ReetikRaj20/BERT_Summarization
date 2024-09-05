@@ -35,3 +35,6 @@ The summarized text has 320 words.
 
 ## Flow Diagram 
 ![Your paragraph text](https://github.com/user-attachments/assets/1f1aa65d-8844-46ca-9ba5-fe175333c71f)
+
+## Published Paper
+[Published paper.pdf](https://github.com/user-attachments/files/16894272/Published.paper.pdf)
