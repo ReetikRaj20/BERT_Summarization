@@ -23,3 +23,6 @@ __Image__
 
  __Summarized Image__
 ![Notepad 05-09-2024 15_12_58](https://github.com/user-attachments/assets/93832de4-4dbd-4e26-8df2-f69456eb62a6)
+
+# Sumarization of Text as an input 
+The discussion and conclusion [Debener et al. 2012 - How about taking a low-cost, small, and wireless EEG for a walk.pdf](https://github.com/user-attachments/files/16894101/Debener.et.al.2012.-.How.about.taking.a.low-cost.small.and.wireless.EEG.for.a.walk.pdf)
